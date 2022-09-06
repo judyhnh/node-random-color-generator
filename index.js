@@ -20,18 +20,18 @@ if (argv[2] && argv[3] === 'light') {
     hue: argv[2],
     luminosity: 'light',
   });
-  console.log(chalk.hex(`${color}`)(`${box}`));
+  console.log(chalk.hex(` ${color} `)(` ${box} `));
 } else if (argv[2] && argv[3] === 'dark') {
   color = randomColor({
     hue: argv[2],
     luminosity: 'dark',
   });
-  console.log(chalk.hex(`${color}`)(`${box}`));
+  console.log(chalk.hex(` ${color} `)(` ${box} `));
 } else if (argv[2]) {
   color = randomColor({
     hue: argv[2],
   });
-  console.log(chalk.hex(`${color}`)(`${box}`));
+  console.log(chalk.hex(` ${color} `)(` ${box} `));
 } else {
-  console.log(chalk.hex(`${color}`)(`${box}`));
+  console.log(chalk.hex(` ${color} `)(` ${box} `));
 }
